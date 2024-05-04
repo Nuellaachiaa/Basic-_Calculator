@@ -1,0 +1,91 @@
+#background{
+    background-color: rgb(21, 20, 23);
+    max-width: 345px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+#display-region{
+    background-color: rgb(21, 20, 23);
+    border: none;
+    outline: none;
+    height: 140px;
+    width: 340px;
+    color: white;
+    text-align: right;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+
+hr{
+    height: 0.2px;
+}
+
+#keys-area{
+    gap: 1px;
+   display: grid; 
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   padding: 0.2rem 1rem 0.5rem 1rem;
+}
+
+
+ @keyframes glow {
+    0% {
+        box-shadow: 0 0 10px rgba(208, 208, 243, 0.7);
+    }
+    50% {
+        box-shadow: 0 0 10px rgba(208, 208, 243, 0.7);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(208, 208, 243, 0.7);
+    }
+}
+
+.btn:hover {
+    animation: glow 1s infinite alternate;
+}
+
+.operator{
+    color: chartreuse;
+}
+
+#clear{
+    color: orangered;
+}
+
+#result{
+    background-color: chartreuse;
+    color: white;
+}
+
+.btn{
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: rgb(54, 50, 57);
+    border: none;
+    color: white;
+    transition: transform 0.3s;
+    margin: 1px;
+    outline: none;
+}
+
+#delete{
+    background-color: rgb(21, 20, 23);
+    color: chartreuse;
+    margin-left: 308px;
+    height: 28px;
+    width: 28px;
+    outline: none;
+    border: none;
+    border-top-left-radius: 100%;
+    border-bottom-left-radius: 100%;
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #DBEDF3;
+  opacity: 0.5;
+}
